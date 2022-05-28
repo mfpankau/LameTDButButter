@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>LameTD but butter 😁👍</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+        <canvas id="canvas" width="900" height="500"></canvas>
+        <textarea id="log" readonly></textarea>
+    </div>
+
+
+    <div id="dashboard" class="static disable-select">
+        <button class="tower-button" id="0" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 1<br>₡ 50</button>
+        <button class="tower-button" id="1" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 2<br>₡ 125</button>
+        <button class="tower-button" id="2" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 3<br>₡ 275</button>
+        <button class="tower-button" id="3" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 4<br>₡ 575</button>
+        <button class="tower-button" id="4" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 5<br>₡ 1175</button>
+        <button class="tower-button" id="5" onclick="buyTower(this.id)"><img class="button-img"><br>Tower 6<br>₡ 2375</button>
+        
+        <div id="control-right">
+            <div class="center">
+                Cash ₡<span id="cash">150</span><br>
+                Wave #<span id="wave">0</span><br>
+                Health ♥<span id="health">10</span><br>
+                
+                <button class="tower-button" role="button" onclick="startWave()" id="wave-button">Start Wave</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="classes.js"></script>
+	<script src="script.js"></script>
+  </body>
+</html>
